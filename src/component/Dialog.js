@@ -79,7 +79,7 @@ function ColorDialog({ data }) {
 function CopyDialog({ data }) {
   const { red, green, blue, alpha, copyOpen, setCopyOpen } = data;
   const [copy, setCopy] = useState("copy");
-  
+
   const handleClose = () => {
     setCopyOpen(false);
   };
@@ -125,7 +125,7 @@ function CopyDialog({ data }) {
               border: "1px solid rgb(19, 47, 76)",
               color: "#fff",
               p: 1,
-              cursor: 'pointer'
+              cursor: "pointer",
             }}
           >
             <Box component="span" sx={{ color: "#f92672" }}>
@@ -156,7 +156,7 @@ function CopyDialog({ data }) {
               border: "1px solid rgb(19, 47, 76)",
               color: "#fff",
               p: 1,
-              cursor: 'pointer'
+              cursor: "pointer",
             }}
           >
             <Box component="span" sx={{ color: "#f92672" }}>
@@ -180,9 +180,6 @@ function CopyDialog({ data }) {
           返回
         </Button>
       </DialogContent>
-      {/* <DialogActions>
-        <Button onClick={handleClose}>返回</Button>
-      </DialogActions> */}
     </Dialog>
   );
 }
