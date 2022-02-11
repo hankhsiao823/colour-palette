@@ -111,7 +111,7 @@ function CopyDialog({ data }) {
         }}
       >
         <Typography sx={{ my: 1 }}>RGBA</Typography>
-        <Tooltip title={copy} placement="top">
+        <Tooltip title={copy} placement="top" arrow>
           <Paper
             elevation={24}
             onClick={() =>
@@ -125,6 +125,7 @@ function CopyDialog({ data }) {
               border: "1px solid rgb(19, 47, 76)",
               color: "#fff",
               p: 1,
+              cursor: 'pointer'
             }}
           >
             <Box component="span" sx={{ color: "#f92672" }}>
@@ -137,7 +138,7 @@ function CopyDialog({ data }) {
           </Paper>
         </Tooltip>
         <Typography sx={{ my: 1 }}>HEX</Typography>
-        <Tooltip title={copy} placement="top">
+        <Tooltip title={copy} placement="top" arrow>
           <Paper
             elevation={24}
             onClick={() =>
@@ -155,6 +156,7 @@ function CopyDialog({ data }) {
               border: "1px solid rgb(19, 47, 76)",
               color: "#fff",
               p: 1,
+              cursor: 'pointer'
             }}
           >
             <Box component="span" sx={{ color: "#f92672" }}>
