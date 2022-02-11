@@ -1,5 +1,6 @@
 {
   "name": "colour_palette_web",
+  "homepage": "https://hankhsiao823.github.io/colour-palette",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
