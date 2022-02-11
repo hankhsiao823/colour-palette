@@ -53,7 +53,7 @@ function App() {
 
   return (
     <Grid container sx={{ height: "100vh" }}>
-      <Grid container sx={{ height: "50%" }}>
+      <Grid container sx={{ height: "50vh" }}>
         <Grid
           item
           xs={12}
@@ -80,7 +80,7 @@ function App() {
         xs={12}
         sx={{
           display: "flex",
-          height: "5%",
+          height: "5vh",
           justifyContent: "center",
           alignItems: "center",
           background: `rgba(0,0,0,${alpha})`,
@@ -109,7 +109,7 @@ function App() {
           />
         </Box>
       </Grid>
-      <Grid container item sx={{ height: "45%" }}>
+      <Grid container item sx={{ height: "45vh" }}>
         {colorComponent.map((item, index) => {
           return (
             <Grid
@@ -159,7 +159,7 @@ function App() {
         })}
         <ColorDialog data={data} />
         <CopyDialog data={data}/>
-        <Fab sx={{position:'absolute',bottom:{xs:5,sm:16},right:{xs:5,sm:16}}} onClick={()=>setCopyOpen(true)}>
+        <Fab sx={{position:'fixed',bottom:{xs:5,sm:16},right:{xs:5,sm:16}}} onClick={()=>setCopyOpen(true)}>
           <ContentCopyIcon />
         </Fab>
       </Grid>
