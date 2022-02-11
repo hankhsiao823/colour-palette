@@ -64,7 +64,7 @@ function App() {
             alignItems: "center",
             flexDirection: "column",
             color:
-              red >= 125 || green >= 125 || blue >= 125 || alpha <= 0.1
+              red >= 125 || green >= 125 || blue >= 125 || alpha < 0.5
                 ? "black"
                 : "white",
           }}
@@ -91,14 +91,14 @@ function App() {
             mr: 2,
             fontSize: {xs:16,sm:24},
             fontWeight: "bold",
-            color: alpha <= 0.5 ? "black" : "white",
+            color: alpha < 0.5 ? "black" : "white",
           }}
         >
           A
         </Typography>
         <Box sx={{ width: "80%", height: 46,display: 'flex',alignItems:'center' }}>
           <Slider
-            sx={{ color: alpha <= 0.5 ? "black" : "white" }}
+            sx={{ color: alpha < 0.5 ? "black" : "white" }}
             key={`slider-${alpha}`}
             defaultValue={alpha}
             valueLabelDisplay="auto"
