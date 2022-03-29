@@ -1,3 +1,3 @@
-#The local colour palette application.
+#The colour palette application.
 
 
